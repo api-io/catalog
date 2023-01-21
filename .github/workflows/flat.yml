@@ -19,16 +19,15 @@ jobs:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
       - run: ruby ./scripts/app_jwt.rb  >> $GITHUB_OUTPUT
-        outputs:
-          app_token: ${{GITHUB_OUTPUT}}
+        env:
+          APP_TOKEN: ${{ GITHUB_OUTPUT }}
+     
       
       
       
       - name: Get App Installation Token
         run: |
-          echo "This token is masked: ${TOKEN}"
-        env:
-          APP_TOKEN: ${{ steps.get_token.outputs }}
+          echo "This token is masked: ${GITHUB_OUTPUT}"
       
   scheduled:
     runs-on: ubuntu-latest
