@@ -27,7 +27,7 @@ jobs:
       
       - name: Get App Installation Token
         run: |
-          echo "This token is masked: ${GITHUB_OUTPUT}"
+          echo "This token is masked:  ${{ env.APP_TOKEN }}"
       
   scheduled:
     runs-on: ubuntu-latest
