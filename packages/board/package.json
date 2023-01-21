@@ -1,6 +1,6 @@
 {
-  "name": "wuffle-board",
-  "version": "0.50.2",
+  "name": "wuffle-api-board",
+  "version": "0.0.0",
   "private": true,
   "devDependencies": {
     "@rollup/plugin-commonjs": "^23.0.3",
@@ -26,7 +26,7 @@
     "svelte-preprocess": "^4.10.7"
   },
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "scripts": {
     "test": "echo \"no tests\"",
@@ -39,6 +39,7 @@
     "build:css": "sass --load-path=../../node_modules src/style/global.scss:../app/public/global.css",
     "build:css:prod": "npm run build:css -- --style compressed",
     "build:css:watch": "npm run build:css -- -w",
-    "dev": "run-s build:watch"
+    "dev": "run-p build:*:watch"
   }
+
 }

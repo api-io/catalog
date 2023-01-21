@@ -1,6 +1,6 @@
 # Config
 
-Several aspects of [wuffle](https://wuffle.dev) are configured via environment variables:
+Several aspects of [wuffle-api](https://wuffle-api.dev) are configured via environment variables:
 
 ### GitHub App
 
@@ -29,7 +29,7 @@ Several aspects of [wuffle](https://wuffle.dev) are configured via environment v
 
 `**` This must match the webhook URL that you configured for your GitHub app.
 
-`***` Use this property instead of configuring your board via a local `wuffle.config.js` file or the `package/app/wuffle.config.js` file.
+`***` Use this property instead of configuring your board via a local `wuffle-api.config.js` file or the `package/app/wuffle-api.config.js` file.
 
 
 ### Persistence

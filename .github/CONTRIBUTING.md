@@ -2,7 +2,7 @@
 
 ## Give Feedback
 
-Try out the tool and [report bugs](https://github.com/nikku/dgit/issues) is the simplest way you can contribute.
+Try out the tool and [report bugs](https://github.com/nikku/wuffle-api/issues) is the simplest way you can contribute.
 
 
 ## Support

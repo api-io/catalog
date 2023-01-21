@@ -38,6 +38,6 @@ jobs:
         context: ./
         file: ./support/docker/Dockerfile
         push: true
-        tags:  ${{ secrets.DOCKER_USERNAME }}/dgit:${{ env.PUBLISH_TAG }}
+        tags:  ${{ secrets.DOCKER_USERNAME }}/wuffle-api:${{ env.PUBLISH_TAG }}
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}

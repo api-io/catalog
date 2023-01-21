@@ -27,7 +27,7 @@ WORKDIR /app
 EXPOSE 3000
 ENV NODE_ENV=production
 
-CMD (cd packages/app && node ./bin/wuffle)
+CMD (cd packages/app && node ./bin/wuffle-api)
 
 COPY --from=prod-builder /prod-build .
 

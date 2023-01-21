@@ -7,7 +7,7 @@ labels: question, installation
 
 __Please Acknowledge the Following__
 
-* [ ] I've followed the [setup and run instructions](https://github.com/nikku/dgit/blob/master/docs/SETUP.md)
+* [ ] I've followed the [setup and run instructions](https://github.com/nikku/wuffle-api/blob/master/docs/SETUP.md)
 
 We cannot help you, otherwise.
 

@@ -1,13 +1,12 @@
 {
-  "name": "wuffle",
-  "version": "0.50.2",
+  "name": "wuffle-api-bot",
   "description": "A multi-repository task board for GitHub issues",
   "author": {
     "name": "Nico Rehwaldt",
     "url": "https://github.com/nikku"
   },
   "bin": {
-    "wuffle": "./bin/wuffle"
+    "wuffle": "./bin/wuffle-api-app"
   },
   "license": "MIT",
   "homepage": "https://github.com/nikku/wuffle",
@@ -28,7 +27,7 @@
   "scripts": {
     "all": "run-s lint lint:types test",
     "dev": "nodemon",
-    "start": "NODE_ENV=production node ./bin/wuffle",
+    "start": "set NODE_ENV=production && node ./bin/wuffle-api-app",
     "test": "mocha 'test/**/*.js' --exit",
     "lint": "run-s lint:*",
     "lint:eslint": "eslint .",
@@ -42,6 +41,7 @@
     "compression": "^1.7.4",
     "express-session": "^1.17.3",
     "fake-tag": "^3.0.0",
+    "hbs": "^4.2.0",
     "memorystore": "^1.6.7",
     "min-dash": "^3.8.1",
     "mkdirp": "^1.0.4",
@@ -67,10 +67,10 @@
     "typescript": "^4.7.3"
   },
   "engines": {
-    "node": "14.x || 16.x"
+    "node": "14.x || 16.x || 18.x"
   },
   "nodemonConfig": {
-    "exec": "node ./bin/wuffle",
+    "exec": "node ./bin/wuffle-api-app",
     "env": {
       "NODE_ENV": "development"
     },

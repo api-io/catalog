@@ -15,7 +15,7 @@ The board supports the following filters:
 | `assignee`, `reviewer`, `author`, `involved` | Filter for cards that involve a specific user | `involves:nikku`, `author:@me` |
 | `milestone` | Filter by [milestone](https://docs.github.com/en/github/managing-your-work-on-github/about-milestones) | `milestone:M1` |
 | `label` | Filter by [label](https://docs.github.com/en/github/managing-your-work-on-github/managing-labels) | `label:critical` |
-| `repo` | Filter by repository | `repo:"nikku/wuffle"` |
+| `repo` | Filter by repository | `repo:"nikku/wuffle-api"` |
 
 Filters get chained together by the board with _and_ semantics.
 

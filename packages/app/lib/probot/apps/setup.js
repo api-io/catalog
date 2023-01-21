@@ -38,7 +38,7 @@ function setupAppFactory(host, port) {
       const createAppUrl = setup.createAppUrl;
 
       // Pass the manifest to be POST'd
-      res.render('setup.hbs', { pkg, createAppUrl, manifest });
+      res.render('setup.handlebars', { pkg, createAppUrl, manifest });
     });
 
     route.get('/probot/setup', async (req, res) => {
